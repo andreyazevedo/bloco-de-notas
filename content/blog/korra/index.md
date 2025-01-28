@@ -1,5 +1,4 @@
 ---
-slug: korra
 date: "2014-12-20"
 title: Korra
 ---

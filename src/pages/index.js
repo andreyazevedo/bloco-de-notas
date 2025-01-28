@@ -18,9 +18,9 @@ const BlogIndex = ({ data }) => {
           const title = post.frontmatter.title
 
           return (
-            <div className="postResume" key={post.frontmatter.slug}>
+            <div className="postResume" key={post.fields.slug}>
               <h3 className="postTitle">
-                <Link style={{ boxShadow: `none` }} to={post.frontmatter.slug}>
+                <Link style={{ boxShadow: `none` }} to={post.fields.slug}>
                   {title}
                 </Link>
               </h3>
@@ -52,9 +52,11 @@ export const pageQuery = graphql`
           depth
           value
         }
+        fields {
+          slug
+        }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
-          slug
           title
         }
       }

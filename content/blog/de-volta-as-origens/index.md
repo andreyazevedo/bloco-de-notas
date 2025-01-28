@@ -1,5 +1,4 @@
 ---
-slug: de-volta-as-origens
 date: "2025-01-28"
 title: De volta as origens
 ---

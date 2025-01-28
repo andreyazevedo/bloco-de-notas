@@ -6,11 +6,21 @@ module.exports = {
     title: `bloco-de-notas`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss", {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `content`,
-      path: `${__dirname}/content`,
+  plugins: [
+    "gatsby-plugin-postcss", 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
     },
-  }, `gatsby-transformer-remark`]
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
+    `gatsby-transformer-remark`]
 };
