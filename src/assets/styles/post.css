@@ -1,0 +1,39 @@
+article {
+  max-width: 620px;
+  margin: 0 auto;
+  hyphens: auto;
+}
+
+article .postTitle {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.postDate {
+  color: #7c7c7c;
+  font-size: 14px;
+  margin: 0;
+}
+
+.postHeader {
+  margin-bottom: 35px;
+  margin-top: 14px;
+}
+
+.postNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.postNavigation a {
+  border: none;
+  color: #333;
+  font-size: 14px;
+  text-decoration: underline;
+}
